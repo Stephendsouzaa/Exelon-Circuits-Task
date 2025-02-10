@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "6d94748a-a108-45f5-b325-66d69b400ed0",
+		"name": "Exelon Circuits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38897879"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/upload",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1efe7738-d6cd-4570-9538-63b325b1ff8e"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/generate-report",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/generate-report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"generate-report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
